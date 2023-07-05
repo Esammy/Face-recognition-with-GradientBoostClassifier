@@ -7,23 +7,41 @@
  - Face detection using MTCNN
  - Detect face using and store it as dataset.npz
  - Create face-embedding using Facenet_Keras model for all the images from dataset.npz and store it in embeddings.npz
+# Dataset
+ - The dataset (photos) used are placed in the dataset folder. splittted into train and val for training photos and validation photos respectively.
+## Getting Started
 
-# Running 
- - Add your photos(>10) in a folder with your name and store it in dataset/train and dataset/val(Use different pictures , since this is used for testing)
- - Run facedetect.py and faceemebed.py to create face-embeddings and run classify to get the result.
+To begin using the face recognition code, follow these steps:
 
-# Output
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
 
-![Screenshot](screenshot.PNG)
+2. Install the necessary dependencies:
+   ```bash
+   pip install -r requirement.txt
+   ```
 
-# Accuracy
-- Next, the model is evaluated on the train and test dataset, showing perfect classification accuracy. This is not surprising given the size of the dataset and the power of the face detection and face recognition models used.
-- Dataset: train=103, test=29
-Accuracy: train=100.000, test=100.000
+3. Run the application:
+   ```bash
+   python faceembed.py
+   ```
+   ```bash
+   python classify.py
+   ```
 
-# Loss function
--A convolutional neural network architecture is proposed. For a loss function, FaceNet uses “triplet loss”. Triplet loss relies on minimizing the distance from positive examples, while maximizing the distance from negative examples.
+## Contributing
 
-# Adam Optimizer
-Adam optimizer is one of the most popular gradient descent optimization algorithms
-Adam algorithm first updates the exponential moving averages of the gradient(mt) and the squared gradient(vt) which is the estimates of the first and second moment.
+We welcome contributions from the community! If you'd like to contribute to the Off-Campus Accommodation Portal, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix.
+3. Commit your changes and push them to your forked repository.
+4. Submit a pull request describing your changes.
+
+## Contact
+
+If you have any questions, suggestions, or feedback, please feel free to reach out to our team at [egwusamuel2015@gmail.com](mailto:egwusamuel2015@gmail.com).
+
+Thank you for choosing the Off-Campus Accommodation Portal! We hope it provides a valuable service for students seeking off-campus accommodation.
